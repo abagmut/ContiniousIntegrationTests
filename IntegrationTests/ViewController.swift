@@ -17,8 +17,8 @@ class ViewController: UIViewController {
 	
 	internal func returnTrue() -> Bool
 	{
-//		return false
-		return true
+		return false
+//		return true
 	}
 }
 
