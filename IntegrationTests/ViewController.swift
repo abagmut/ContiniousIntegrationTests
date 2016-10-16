@@ -10,10 +10,21 @@ import UIKit
 
 class ViewController: UIViewController
 {
+	override func viewDidLoad()
+	{
+		super.viewDidLoad()
+	}
+	
 	internal func returnTrue() -> Bool
 	{
 //		return false
 		return true
+	}
+	
+	internal func notCovered() -> Void
+	{
+		let test = 5*7
+		print(test)
 	}
 }
 
