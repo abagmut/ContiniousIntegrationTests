@@ -7,9 +7,9 @@
 //
 
 import XCTest
-//import ViewController
 
 @testable import IntegrationTests
+
 
 class IntegrationTestsTests: XCTestCase {
     

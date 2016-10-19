@@ -8,23 +8,40 @@
 
 import UIKit
 
-class ViewController: UIViewController
+class ViewController: UIViewController, UITextFieldDelegate
 {
 	override func viewDidLoad()
 	{
 		super.viewDidLoad()
+		
+		let tf = UITextField()
+		tf.delegate = self
 	}
 	
-	internal func returnTrue() -> Bool
+	override func loadView()
 	{
+		view = UIView()
+	}
+	
+	func returnTrue() -> Bool
+	{
+		UIView.animate(withDuration: 1) { 
+			self.notCovered()
+		}
 //		return false
 		return true
 	}
 	
-	internal func notCovered() -> Void
+	private func notCovered() -> Void
 	{
 		let test = 5*7
 		print(test)
+	}
+	
+	func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool
+	{
+		print(textField)
+		return true
 	}
 }
 

@@ -404,6 +404,7 @@
 				0F9732D51DAD769000B977BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F9732D61DAD769000B977BD /* Build configuration list for PBXNativeTarget "IntegrationTestsTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +413,7 @@
 				0F9732D81DAD769000B977BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
