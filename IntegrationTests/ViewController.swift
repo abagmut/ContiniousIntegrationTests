@@ -14,6 +14,8 @@ class ViewController: UIViewController, UITextFieldDelegate
 	{
 		super.viewDidLoad()
 		
+		view.backgroundColor = UIColor.green
+		
 		let tf = UITextField()
 		tf.delegate = self
 	}
