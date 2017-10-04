@@ -36,7 +36,7 @@ platform :ios do
       payload: { 
         "Deployed version" => "Version #{get_version_number}(#{get_build_number})",
         "Release notes:" => changelog_from_git_commits
-      }
+      },
       default_payloads: [:lane, :git_branch, :last_git_commit_hash]
     )
 
