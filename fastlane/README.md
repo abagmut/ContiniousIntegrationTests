@@ -42,6 +42,21 @@ fastlane ios beta
 Submit a new Beta Build to Apple TestFlight
 
 This will also make sure the profile is up to date
+### ios initial_git_check
+```
+fastlane ios initial_git_check
+```
+
+### ios post_succes_to_slack
+```
+fastlane ios post_succes_to_slack
+```
+
+### ios update_git_on_success
+```
+fastlane ios update_git_on_success
+```
+
 ### ios release
 ```
 fastlane ios release

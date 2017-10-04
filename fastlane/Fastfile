@@ -28,15 +28,20 @@ platform :ios do
   desc "Submit a new Beta Build to Apple TestFlight"
   desc "This will also make sure the profile is up to date"
   lane :beta do
-    initial_git_check
+    validate_initial_state(
+      git_branch: "dev"
+    )
     increment_build_number
     post_succes_to_slack
     update_git_on_success
   end
 
-  lane :initial_git_check do
+  lane :validate_initial_state do |git_branch|
     ensure_git_status_clean
-    sh "git pull origin dev"
+    ensure_git_branch(
+      branch: git_branch
+    )
+    sh "git pull origin #{git_branch}"
   end
 
   lane :post_succes_to_slack do
