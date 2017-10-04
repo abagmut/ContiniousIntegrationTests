@@ -5,72 +5,77 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="00: Verifying required fastlane version" time="0.001577">
+      <testcase classname="fastlane.lanes" name="00: Verifying required fastlane version" time="0.003359">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="01: default_platform" time="0.001132">
+      <testcase classname="fastlane.lanes" name="01: default_platform" time="0.001235">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="02: ensure_git_status_clean" time="0.011651">
+      <testcase classname="fastlane.lanes" name="02: ensure_git_status_clean" time="0.012278">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="03: git pull origin dev" time="5.841543">
+      <testcase classname="fastlane.lanes" name="03: git pull origin dev" time="1.745056">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="04: increment_build_number" time="1.982387">
+      <testcase classname="fastlane.lanes" name="04: increment_build_number" time="1.998809">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="05: get_version_number" time="0.657585">
+      <testcase classname="fastlane.lanes" name="05: get_version_number" time="0.646112">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="06: get_build_number" time="0.615964">
+      <testcase classname="fastlane.lanes" name="06: get_build_number" time="0.630369">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="07: changelog_from_git_commits" time="0.033924">
+      <testcase classname="fastlane.lanes" name="07: changelog_from_git_commits" time="0.034659">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="08: slack" time="0.763349">
+      <testcase classname="fastlane.lanes" name="08: changelog_from_git_commits" time="0.035889">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="09: get_version_number" time="0.706135">
+      <testcase classname="fastlane.lanes" name="09: slack" time="0.853388">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="10: get_build_number" time="0.634887">
+      <testcase classname="fastlane.lanes" name="10: get_version_number" time="0.719491">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="11: commit_version_bump" time="0.119383">
+      <testcase classname="fastlane.lanes" name="11: get_build_number" time="0.647935">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="12: add_git_tag" time="0.01631">
+      <testcase classname="fastlane.lanes" name="12: commit_version_bump" time="0.118665">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="13: push_to_git_remote" time="3.444672">
+      <testcase classname="fastlane.lanes" name="13: add_git_tag" time="0.016341">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="14: push_to_git_remote" time="3.205154">
         
       </testcase>
     
