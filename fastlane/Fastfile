@@ -17,9 +17,7 @@ default_platform :ios
 
 platform :ios do
   before_all do
-    # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
-    # cocoapods
-    # carthage
+    ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
   end
 
   desc "Runs all the tests"
@@ -31,8 +29,13 @@ platform :ios do
   desc "This will also make sure the profile is up to date"
   lane :beta do
     # ensure_git_status_clean
+    sh "git checkout dev"
+    sh "git pull origin dev"
     increment_build_number
-    commit_version_bump message: "v #{get_version_number}(#{get_build_number})"
+    commit_version_bump(
+      force: true,
+      message: "v #{get_version_number}(#{get_build_number})"
+    ) 
     push_to_git_remote
 
     # gym 
@@ -53,9 +56,9 @@ platform :ios do
   after_all do |lane|
     # This block is called, only if the executed lane was successful
 
-    # slack(
-    #   message: "Successfully deployed new App Update."
-    # )
+    slack(
+      message: "Successfully deployed new App Update version #{get_version_number}(#{get_build_number})"
+    )
   end
 
   error do |lane, exception|

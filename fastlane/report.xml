@@ -5,34 +5,62 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.001569">
+      <testcase classname="fastlane.lanes" name="00: Verifying required fastlane version" time="0.001706">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.001132">
+      <testcase classname="fastlane.lanes" name="01: default_platform" time="0.001118">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: increment_build_number" time="1.954588">
+      <testcase classname="fastlane.lanes" name="02: git checkout dev" time="0.018701">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: get_version_number" time="0.662894">
+      <testcase classname="fastlane.lanes" name="03: git pull origin dev" time="1.808491">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="4: get_build_number" time="0.612696">
+      <testcase classname="fastlane.lanes" name="04: increment_build_number" time="2.023466">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="5: commit_version_bump" time="0.088219">
+      <testcase classname="fastlane.lanes" name="05: get_version_number" time="0.655766">
         
-          <failure message="/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/actions/actions_helper.rb:48:in `execute_action'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/runner.rb:230:in `block in execute_action'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/runner.rb:226:in `chdir'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/runner.rb:226:in `execute_action'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/runner.rb:148:in `trigger_action_by_name'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/fast_file.rb:146:in `method_missing'&#10;Fastfile:35:in `block (2 levels) in parsing_binding'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/lane_manager.rb:52:in `cruise_lane'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/command_line_handler.rb:30:in `handle'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/commands_generator.rb:104:in `block (2 levels) in run'&#10;/Library/Ruby/Gems/2.3.0/gems/commander-fastlane-4.4.5/lib/commander/command.rb:178:in `call'&#10;/Library/Ruby/Gems/2.3.0/gems/commander-fastlane-4.4.5/lib/commander/command.rb:153:in `run'&#10;/Library/Ruby/Gems/2.3.0/gems/commander-fastlane-4.4.5/lib/commander/runner.rb:476:in `run_active_command'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:64:in `run!'&#10;/Library/Ruby/Gems/2.3.0/gems/commander-fastlane-4.4.5/lib/commander/delegates.rb:15:in `run!'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/commands_generator.rb:303:in `run'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/commands_generator.rb:42:in `start'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/fastlane/lib/fastlane/cli_tools_distributor.rb:66:in `take_off'&#10;/Library/Ruby/Gems/2.3.0/gems/fastlane-2.60.0/bin/fastlane:20:in `&lt;top (required)&gt;'&#10;/usr/local/bin/fastlane:22:in `load'&#10;/usr/local/bin/fastlane:22:in `&lt;main&gt;'&#10;&#10;Found unexpected uncommitted changes in the working directory. Expected these files to have &#10;changed: &#10;IntegrationTests.xcodeproj/project.pbxproj&#10;IntegrationTests/Info.plist&#10;IntegrationTestsTests/Info.plist&#10;IntegrationTestsUITests/Info.plist.&#10;But found these actual changes: &#10;IntegrationTests.xcodeproj/project.pbxproj&#10;IntegrationTests/Info.plist&#10;IntegrationTestsTests/Info.plist&#10;IntegrationTestsUITests/Info.plist&#10;fastlane/Fastfile&#10;fastlane/report.xml.&#10;Make sure you have cleaned up the build artifacts and &#10;are only left with the changed version files at this stage in your lane, and don't touch the &#10;working directory while your lane is running. You can also use the :force option to bypass this &#10;check, and always commit a version bump regardless of the state of the working directory." />
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="06: get_build_number" time="0.62343">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="07: commit_version_bump" time="0.142073">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="08: push_to_git_remote" time="5.064094">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="09: get_version_number" time="0.682444">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="10: get_build_number" time="0.649138">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="11: slack" time="0.847776">
         
       </testcase>
     
