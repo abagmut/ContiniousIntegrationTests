@@ -36,12 +36,12 @@ platform :ios do
     update_git_on_success
   end
 
-  lane :validate_initial_state do |git_branch|
+  lane :validate_initial_state do |options|
     ensure_git_status_clean
     ensure_git_branch(
       branch: git_branch
     )
-    sh "git pull origin #{git_branch}"
+    sh "git pull origin #{options[:git_branch]}"
   end
 
   lane :post_succes_to_slack do
