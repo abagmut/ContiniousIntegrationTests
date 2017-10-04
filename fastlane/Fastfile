@@ -31,6 +31,11 @@ platform :ios do
     ensure_git_status_clean
     sh "git pull origin dev"
     increment_build_number
+
+    slack(
+      message: "Successfully deployed new App Update version #{get_version_number}(#{get_build_number})\nRelease notes: #{changelog_from_git_commits}"
+    )
+
     commit_version_bump(
       force: true,
       message: "v #{get_version_number}(#{get_build_number})"
@@ -55,10 +60,6 @@ platform :ios do
 
   after_all do |lane|
     # This block is called, only if the executed lane was successful
-
-    slack(
-      message: "Successfully deployed new App Update version #{get_version_number}(#{get_build_number})\nRelease notes: #{changelog_from_git_commits}"
-    )
   end
 
   error do |lane, exception|
